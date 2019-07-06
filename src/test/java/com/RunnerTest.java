@@ -28,4 +28,12 @@ public class RunnerTest {
                 () -> assertEquals(strings.get(1), "b"),
                 () -> assertEquals(strings.get(2), "c"));
     }
+
+    @Test
+    @DisplayName("split null")
+    void splitNull() {
+        List<String> strings = Runner.splitTest(null);
+        assertTrue(strings.isEmpty());
+
+    }
 }
