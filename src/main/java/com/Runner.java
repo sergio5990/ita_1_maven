@@ -7,7 +7,7 @@ public class Runner {
         printName("Sergey");
     }
 
-    private static void printName(String name) {
+    static void printName(String name) {
         System.out.println("Name : " + StringUtils.upperCase(name));
     }
 }
